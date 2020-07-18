@@ -1,0 +1,86 @@
+{%extends "layout.njk"%}
+
+{% block content %}
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Olá, eu sou
+      <strong>{{ data.name }}</strong>
+    </h1>
+    <p class="section__subtitle--intro">
+      {{ data.role }}
+    </p>
+    <img src="{{ data.avatarUrl }}" alt="Uma imagem de {{ data.name }}" class="intro__img">
+
+  </section>
+
+  <!-- Services -->
+  <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">O que eu faço</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Design + Desenvolvimento</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate, delectus, inventore deleniti animi impedit ducimus in dolores soluta explicabo vitae eos iure aliquid corporis temporibus velit, fugiat placeat asperiores?
+        </p>
+      </div>
+      <!-- service -->
+
+      <div class="service">
+        <h3>API Rest</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate, delectus, inventore deleniti animi impedit ducimus in dolores soluta explicabo vitae eos iure aliquid corporis temporibus velit, fugiat placeat asperiores?</p>
+      </div>
+      <!-- service -->
+
+      <div class="service">
+        <h3>Scripts</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate, delectus, inventore deleniti animi impedit ducimus in dolores soluta explicabo vitae eos iure aliquid corporis temporibus velit, fugiat placeat asperiores?</p>
+      </div>
+      <!-- service -->
+    </div>
+    <!-- services -->
+
+    <a href="#work" class="btn">Meus trabalhos</a>
+  </section>
+
+  <!-- About me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Quem sou eu</h2>
+    <p class="section__subtitle section__subtitle--about">
+      Desenvolvedor Full-stack na Grande POA
+    </p>
+
+    <div class="about-me__body">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod illo fugiat aspernatur autem magni nulla quibusdam tempore eaque dolorem minima fuga veniam, sequi quis voluptates, cum voluptas, quo sed?
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod illo fugiat aspernatur autem magni nulla quibusdam tempore eaque dolorem minima fuga veniam, sequi quis voluptates, cum voluptas, quo sed?
+      </p>
+    </div>
+
+    <img src="https://avatars0.githubusercontent.com/u/46526999?s=460&v=4" alt="Anderson Dias" class="about-me__img">
+  </section>
+
+  <!-- My work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">Meus projetos</h2>
+    <p class="section__subtitle section__subtitle--work">
+      Uma seleção dos meus trabalhos
+    </p>
+    <div class="portfolio">
+
+      {% for item in itens %}
+        <!-- Portfolio item -->
+        <div class="portfolio__item" id={{item.id}}>
+          <img src="{{item.banner}}" alt="" class="portfolio__img">
+        </div>
+      {% endfor %}
+
+    </div>
+  </section>
+{% endblock content %}
+
+{% block scripts%}
+  <script src="./scripts/index.js"></script>
+{% endblock scripts %}

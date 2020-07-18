@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "title": "Tube Counter",
+    "subTitle": "Contagem a partir de uma imagem",
+    "banner": "https://github.com/andersondi/metal-tubes-counter/raw/master/images/banner.png",
+    "result": "https://github.com/andersondi/metal-tubes-counter/raw/master/images/video-1.gif",
+    "abstract": "Aplicação que conta tubos a partir de uma imagem",
+    "mainDescription": "Este projeto tem como objetivo desenvolver uma técnica de reconhecimento de circunfêrencias mais eficiente que Hough Circles para a contagem de tubos em um estoque. \nA contagem deve ser feita a partir de uma imagem frontal da amostra."
+  }
+]
