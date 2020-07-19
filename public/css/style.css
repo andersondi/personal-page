@@ -445,14 +445,21 @@ section {
   padding: .5em;
 }
 
-.portifolio-item-individual{
+.portfolio-item-individual{
   padding: 2em 2em 0;
   max-width: 1000px;
   margin: 0 auto;
+  
 }
 
-.portifolio-item-individual p{
+.portfolio-item-individual p{
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.result__img{
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }

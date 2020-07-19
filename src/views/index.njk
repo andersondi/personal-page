@@ -21,20 +21,20 @@
       <div class="service">
         <h3>Design + Desenvolvimento</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate, delectus, inventore deleniti animi impedit ducimus in dolores soluta explicabo vitae eos iure aliquid corporis temporibus velit, fugiat placeat asperiores?
+          Desenvolvimento de páginas web utilizando HTML e CSS aliados a view engines para aproveitar os benefícios de componentização. Implementação de SPA (Single Page Application) utilizando ReactJS.
         </p>
       </div>
       <!-- service -->
 
       <div class="service">
-        <h3>API Rest</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate, delectus, inventore deleniti animi impedit ducimus in dolores soluta explicabo vitae eos iure aliquid corporis temporibus velit, fugiat placeat asperiores?</p>
+        <h3>API RESTful</h3>
+        <p>Criação de API RESTful utilizando NodeJS utilizando Express ou Java utilizando Spring.</p>
       </div>
       <!-- service -->
 
       <div class="service">
         <h3>Scripts</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate, delectus, inventore deleniti animi impedit ducimus in dolores soluta explicabo vitae eos iure aliquid corporis temporibus velit, fugiat placeat asperiores?</p>
+        <p>Uso de scripts para automatização de tarefas utilizando Python.</p>
       </div>
       <!-- service -->
     </div>
@@ -52,10 +52,7 @@
 
     <div class="about-me__body">
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod illo fugiat aspernatur autem magni nulla quibusdam tempore eaque dolorem minima fuga veniam, sequi quis voluptates, cum voluptas, quo sed?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod illo fugiat aspernatur autem magni nulla quibusdam tempore eaque dolorem minima fuga veniam, sequi quis voluptates, cum voluptas, quo sed?
+        Sou graduando do sétimo semestre em engenharia eletrônica e um intusiasta de programação. Gosto de aprender sobre tecnologias versáteis como JavaScript e Python e tenho tentado aprender cada vez mais sobre sistemas Linux.
       </p>
     </div>
 
@@ -73,7 +70,7 @@
       {% for item in itens %}
         <!-- Portfolio item -->
         <div class="portfolio__item" id={{item.id}}>
-          <img src="{{item.banner}}" alt="" class="portfolio__img">
+          <img src="{{item.images.banner}}" alt="" class="portfolio__img">
         </div>
       {% endfor %}
 
