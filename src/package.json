@@ -24,6 +24,20 @@
   },
   "devDependencies": {
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "browser-sync": "^2.18.13",
+    "gulp": "^4.0.2",
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.6.1",
+    "gulp-babel": "7.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-sass": "4.0.1",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "1.0.9",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-nunjucks-render": "^2.2.1"
   }
 }
